@@ -30,8 +30,4 @@ div#zentai > div {
 }
 img.sign {
     float: right;   /* 画像を右に浮かせる */
-
-    width: 100px;
-    height: 100px;
-    margin: 10px 0 10px 10px;
 }

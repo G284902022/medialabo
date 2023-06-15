@@ -22,11 +22,10 @@ div#zentai {
 	grid-template-columns: 1fr 1fr;
 	width: 1024px;
 	height: 200;
-	padding: 5px 5px 5px 5px;
 	border: 10px;
 }
 
 div#zentai > div {
-	margin-left: 5px;
+	padding: 5px 5px 5px 5px;
 	background-color: #ffefaf;
 }

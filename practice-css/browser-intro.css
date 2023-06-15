@@ -1,7 +1,5 @@
 p {
 	color: navy;
-	
-	
 }
 
 p.info {
@@ -27,7 +25,6 @@ div#zentai {
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: 200px;
 	grid-gap: 10px;
-	
 }
 
 div#zentai > div {

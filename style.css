@@ -3,6 +3,9 @@ h1 {
 	text-shadow: rgb(208, 208, 84) 1px 0 10px;
 }
 a:hover {
-    color: purple;
-    font-style: normal;
+    color: red;
+    font-family: sans-serif;
+}
+div {
+    
 }

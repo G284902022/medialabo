@@ -20,9 +20,18 @@ function hantei() {
     if(kaisu > 4) {
     console.log('答えは '+ kotae + ' でした．すでにゲームは終わっています');
     }
+    else if(kaisu === 3 && kotae !== yoso) {
+        console.log(('まちがい．残念でした答えは ' + kotae + ' です．'));
+    }
     else if(yoso === kotae) {
-    console.log('正解です.おめでとう');
+    console.log('正解です．おめでとう!');
     } 
+    else if(yoso > kotae) {
+        console.log('まちがい．答えはもっと小さいですよ');
+    }
+    else if(yoso < kotae) {
+        console.log('まちがい．答えはもっと大きいですよ');
+    }
   
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力

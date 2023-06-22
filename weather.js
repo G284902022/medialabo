@@ -46,4 +46,5 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-
+console.log('緯度は' + data.coord.lon); 
+console.log('経度は' + data.coord.lat); 

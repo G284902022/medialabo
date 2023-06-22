@@ -17,7 +17,7 @@ function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
     let yoso = 4;
     console.log(kaisu + '回目の予想:' + yoso); 
-    if(kaisu > 4) {
+    if(kaisu > 3) {
     console.log('答えは '+ kotae + ' でした．すでにゲームは終わっています');
     }
     else if(kaisu === 3 && kotae !== yoso) {

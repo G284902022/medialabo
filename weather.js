@@ -49,3 +49,4 @@ let data = {
 console.log('緯度は' + data.coord.lon); 
 console.log('経度は' + data.coord.lat); 
 data.weather[0].description;
+console.log(data.weather[0].description); 

@@ -48,7 +48,7 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 console.log('緯度は' + data.coord.lon); 
 console.log('経度は' + data.coord.lat); 
-data.weather[0].description;
+console.log('天気: ' + data.weather[0].description);
 console.log(data.weather[0].description); 
 console.log('最低気温: ' + data.main.temp_min);
 console.log('最高気温: ' + data.main.temp_max);

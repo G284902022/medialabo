@@ -32,8 +32,8 @@ for(let a of w) {
 // 練習4-5 箇条書き追加プログラム
 let ul = document.querySelector('ul#location'); 
 
-for(let a of data) {
+for(let aa of data) {
 	let li = document.querySelector('li');
-	li.textContent = a.name + ' ... 緯度:' + a.lat + '経度:' + a.lng;
+	li.textContent = aa.name + ' ... 緯度:' + aa.lat + '経度:' + aa.lng;
 	ul.insertAdjacentElement('beforeend', li); 
 }

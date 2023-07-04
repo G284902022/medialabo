@@ -32,18 +32,23 @@ function hantei() {
     console.log(kaisu + '回目の予想:' + yoso); 
 
     if(kaisu > 4) {
-    console.log('答えは '+ kotae + ' でした．すでにゲームは終わっています');
+      re.textContent = '答えは ' + kotae + 'でした. すでにゲームは終わっています';
+    //console.log('答えは '+ kotae + ' でした．すでにゲームは終わっています');
     }
     else if(kaisu === 3 && kotae !== yoso) {
-        console.log(('まちがい．残念でした答えは ' + kotae + ' です．'));
+      re.textcontent = 'まちがい. 残念でした答えは ' + kotae ; 'です.';
+        //console.log(('まちがい．残念でした答えは ' + kotae + ' です．'));
     }
     else if(yoso === kotae) {
-    console.log('正解です．おめでとう!');
+      re.textContent = '正解です.おめでとう！';
+    //console.log('正解です．おめでとう!');
     } 
     else if(yoso > kotae) {
-        console.log('まちがい．答えはもっと小さいですよ');
+      re.textContent = 'まちがい. 答えはもっと小さいですよ';
+        //console.log('まちがい．答えはもっと小さいですよ');
     }
     else if(yoso < kotae) {
-        console.log('まちがい．答えはもっと大きいですよ');
+      re.textContent = 'まちがい. 答えはもっと大きいですよ';
+        //console.log('まちがい．答えはもっと大きいですよ');
     }
 }

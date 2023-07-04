@@ -3,7 +3,8 @@ console.log('答え（デバッグ用）: ' + kotae);
 
 // 入力回数（予想回数）
 let kaisu = 1;
-//let h2 = document.querySelector('span#kaisu'); 
+let h2 = document.querySelector('span#kaisu'); 
+h2.textContent = kaisu;
 
 
 // 予想を4回実行する
@@ -20,6 +21,11 @@ function hantei() {
     let yoso = 4;
 
     
+    let h2 = document.querySelector('span#kaisu'); 
+    h2.textContent = kaisu;
+    let yos = document.querySelector('span#answer');
+    yos.textContent = yoso;
+    let re = document.querySelector('p#result');
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール

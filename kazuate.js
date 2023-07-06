@@ -15,8 +15,11 @@ h2.textContent = kaisu;
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-    
+    let bbb = document.querySelector('#hantei'); 
+    bbb.addEventListener('click', hantei); 
 
+    let i = document.querySelector('input[name="hantei"]');
+    let yoso = i.value;
     
     let h2 = document.querySelector('span#kaisu'); 
     h2.textContent = kaisu;

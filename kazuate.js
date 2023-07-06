@@ -18,7 +18,7 @@ h2.textContent = kaisu;
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
 
-    let i = document.querySelector('input[name="hantei"]');
+    let i = document.querySelector('input[name="yosoo"]');
     let yoso = i.value;
     yoso = yoso - 0;
     

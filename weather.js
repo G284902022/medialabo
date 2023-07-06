@@ -49,11 +49,11 @@ let data = {
 let a = document.querySelector('#tenki');
 a.addEventListener('click', tenki);
 
-function tenki {
+function tenki() {
   let i = document.querySelector('input[name="wea"]');
   let wea = i.value;
   console.log(wea);
-
+}
   console.log('緯度は' + data.coord.lon); 
   console.log('経度は' + data.coord.lat); 
   console.log('天気: ' + data.weather[0].description);
@@ -63,4 +63,3 @@ function tenki {
   console.log('風速: ' + data.wind.speed);
   console.log('風向: ' + data.wind.deg);
   console.log('都市名: ' + data.name);
-}

@@ -1,10 +1,7 @@
 let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え（デバッグ用）: ' + kotae);
-
+let kaisu = 1;
 // 入力回数（予想回数）
-let kaisu = 0;
-let h2 = document.querySelector('span#kaisu'); 
-h2.textContent = kaisu;
 
 
 // 予想を4回実行する
@@ -24,6 +21,7 @@ function hantei() {
 
     let kame = document.querySelector('span#kaime');
     kame.textContent = '回目の予想: ';
+
     let h2 = document.querySelector('span#kaisu'); 
     h2.textContent = kaisu;
     let yos = document.querySelector('span#answer');

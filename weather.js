@@ -51,7 +51,7 @@ a.addEventListener('click', tenki);
 
 function kensaku {
   let i = document.querySelector('input[name="wea"]');
-  let wea = i.ariavalu;
+  let wea = i.value;
   console.log(wea);
 
   console.log('緯度は' + data.coord.lon); 

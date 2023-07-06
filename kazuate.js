@@ -11,12 +11,12 @@ h2.textContent = kaisu;
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 
-
+    let bbb = document.querySelector('#hantei'); 
+    bbb.addEventListener('click', hantei);
+    
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-    let bbb = document.querySelector('#hantei'); 
-    bbb.addEventListener('click', hantei); 
 
     let i = document.querySelector('input[name="hantei"]');
     let yoso = i.value;

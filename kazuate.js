@@ -22,6 +22,8 @@ function hantei() {
     let yoso = i.value;
     yoso = yoso - 0;
     
+    let kame = document.querySelector('span#kaime');
+    kame.textContent = "回目の予想: ";
     let h2 = document.querySelector('span#kaisu'); 
     h2.textContent = kaisu;
     let yos = document.querySelector('span#answer');

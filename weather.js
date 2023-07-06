@@ -46,12 +46,21 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log('緯度は' + data.coord.lon); 
-console.log('経度は' + data.coord.lat); 
-console.log('天気: ' + data.weather[0].description);
-console.log('最低気温: ' + data.main.temp_min);
-console.log('最高気温: ' + data.main.temp_max);
-console.log('湿度: ' + data.main.humidity);
-console.log('風速: ' + data.wind.speed);
-console.log('風向: ' + data.wind.deg);
-console.log('都市名: ' + data.name);
+let a = document.querySelector('#tenki');
+a.addEventListener('click', tenki);
+
+function kensaku {
+  let i = document.querySelector('input[name="wea"]');
+  let wea = i.ariavalu;
+  console.log(wea);
+
+  console.log('緯度は' + data.coord.lon); 
+  console.log('経度は' + data.coord.lat); 
+  console.log('天気: ' + data.weather[0].description);
+  console.log('最低気温: ' + data.main.temp_min);
+  console.log('最高気温: ' + data.main.temp_max);
+  console.log('湿度: ' + data.main.humidity);
+  console.log('風速: ' + data.wind.speed);
+  console.log('風向: ' + data.wind.deg);
+  console.log('都市名: ' + data.name);
+}

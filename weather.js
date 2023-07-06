@@ -49,7 +49,7 @@ let data = {
 let a = document.querySelector('#tenki');
 a.addEventListener('click', tenki);
 
-function kensaku {
+function tenki {
   let i = document.querySelector('input[name="wea"]');
   let wea = i.value;
   console.log(wea);

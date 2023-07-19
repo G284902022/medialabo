@@ -3,6 +3,12 @@ h1 {
 	color: white;
 	text-shadow: rgb(208, 208, 84) 1px 0 10px;
 }
+h2 {
+    margin: 5px;
+	font-family: cursive;
+	color: #7db2c6;
+	background: linear-gradient(0.25turn, white, #ffefaf);
+}
 a:hover {
     color: red;
     font-family: sans-serif;

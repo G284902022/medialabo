@@ -19,6 +19,7 @@ a:hover {
 div {
     padding-left: 5px;
 	background-color: rgba(255, 255, 128, .5);
+    border: thick double #32a1ce;
 }
 h2#aaa {
     background: linear-gradient(0.25turn, rgb(255, 244, 148), white);

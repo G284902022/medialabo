@@ -7,7 +7,7 @@ h1 {
 h2 {
     margin: 5px;
 	color: #ffffff;
-	background: linear-gradient(0.25turn, rgb(68, 152, 255), rgba(255, 255, 128, .5));
+	background: linear-gradient(0.25turn, rgb(255, 255, 255), rgba(255, 255, 128, .5));
 }
 
 a:hover {

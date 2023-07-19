@@ -1,12 +1,12 @@
 
 h1 {
-	color: white;
+	color: rgb(0, 0, 0);
 	text-shadow: rgb(208, 208, 84) 1px 0 10px;
 }
 
 h2 {
     margin: 5px;
-	color: #ffffff;
+	color: #000000;
 	background: linear-gradient(0.25turn, rgb(163, 98, 98), rgba(255, 255, 128, .5));
 }
 

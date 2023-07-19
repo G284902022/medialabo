@@ -9,7 +9,7 @@ h1 {
 h2 {
     margin: 5px;
 	color: #000000;
-	
+	border-bottom-style: groove;
 }
 
 a:hover {

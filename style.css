@@ -20,6 +20,6 @@ div {
     padding-left: 5px;
 	background-color: rgba(255, 255, 128, .5);
 }
-h2 #aaa {
+h2#aaa {
     background: linear-gradient(0.25turn, rgb(255, 206, 115), white);
 }

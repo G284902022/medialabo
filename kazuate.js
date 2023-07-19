@@ -32,7 +32,7 @@ function hantei() {
   // 課題3-1における出力先はコンソール
     console.log(kaisu + '回目の予想:' + yoso); 
 
-    if(kaisu == 4) {
+    if(kaisu >= 4) {
       re.textContent = '答えは ' + kotae + 'でした. すでにゲームは終わっています';
       kaisu ++;
     //console.log('答えは '+ kotae + ' でした．すでにゲームは終わっています');

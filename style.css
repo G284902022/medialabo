@@ -3,6 +3,7 @@ h1 {
 	color: rgb(0, 0, 0);
 	text-shadow: rgb(255, 255, 255) 1px 0 10px;
     background: linear-gradient(0.25turn, rgb(255, 206, 115), white);
+    border-bottom-style: groove;
 }
 
 h2 {
@@ -19,7 +20,8 @@ a:hover {
 div {
     padding-left: 5px;
 	background-color: rgba(255, 255, 128, .5);
-    border: thick double #32a1ce;
+    border: thick double #3edef7;
+    border-bottom-style: groove;
 }
 h2#aaa {
     background: linear-gradient(0.25turn, rgb(255, 244, 148), white);

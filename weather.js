@@ -46,20 +46,92 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-let a = document.querySelector('#tenki');
-a.addEventListener('click', tenki);
+// let aaaa = document.querySelector('#tenki');
+// aaaa.addEventListener('click', tenki);
 
-function tenki() {
-  let i = document.querySelector('input[name="wea"]');
-  let wea = i.value;
-  console.log(wea);
-}
-  console.log('緯度は' + data.coord.lon); 
-  console.log('経度は' + data.coord.lat); 
-  console.log('天気: ' + data.weather[0].description);
-  console.log('最低気温: ' + data.main.temp_min);
-  console.log('最高気温: ' + data.main.temp_max);
-  console.log('湿度: ' + data.main.humidity);
-  console.log('風速: ' + data.wind.speed);
-  console.log('風向: ' + data.wind.deg);
-  console.log('都市名: ' + data.name);
+
+  // console.log('緯度は' + data.coord.lon); 
+  // console.log('経度は' + data.coord.lat); 
+  // console.log('天気: ' + data.weather[0].description);
+  // console.log('最低気温: ' + data.main.temp_min);
+  // console.log('最高気温: ' + data.main.temp_max);
+  // console.log('湿度: ' + data.main.humidity);
+  // console.log('風速: ' + data.wind.speed);
+  // console.log('風向: ' + data.wind.deg);
+  // console.log('都市名: ' + data.name);
+
+  let bt = document.querySelector('button#btn');
+  bt.addEventListener('click', btn);
+  function btn() {
+    let s = document.querySelector('select#otenki');
+    let idx = s.selectedIndex;  // idx 番目の option が選択された
+    let os = s.querySelectorAll('option');  // s の子要素 option をすべて検索
+    let o = os.item(idx);       // os の idx 番目の要素
+
+    let wea = o.value;
+    console.log(wea);
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+wea+".json";
+
+    axios.get(url)
+        .then(showResult)   
+        .catch(showError)   
+        .then(finish);     
+  }
+
+  
+  function showResult(resp) {
+    let data = resp.data;
+    let div = document.querySelector('div#result');
+    div.textContent="";
+    if (typeof data === 'string') {
+        data = JSON.parse(data);
+    }
+    div = document.querySelector('div#result');
+    let l = document.createElement("p");
+    l.textContent="都市名:" + data.name;
+    div.insertAdjacentElement('beforeend', l);
+
+    // div = document.querySelector('div#result');
+    l = document.createElement("p");
+    l.textContent='緯度:' + data.coord.lon;
+    div.insertAdjacentElement('beforeend', l);
+  
+    l = document.createElement("p");
+    l.textContent='経度:' + data.coord.lat;
+    div.insertAdjacentElement('beforeend', l);
+  
+    l = document.createElement("p");
+    l.textContent='天気:' + data.weather[0].description;
+    div.insertAdjacentElement('beforeend', l);
+  
+    l = document.createElement("p");
+    l.textContent='最低気温:' + data.main.temp_min;
+    div.insertAdjacentElement('beforeend', l);
+  
+    l = document.createElement("p");
+    l.textContent='最高気温:' + data.main.temp_max;
+    div.insertAdjacentElement('beforeend', l);
+  
+    l = document.createElement("p");
+    l.textCnotent='湿度:' + data.main.humidity;
+    div.insertAdjacentElement('beforeend', l);
+  
+    l = document.createElement("p");
+    l.textContent='風速:' + data.wind.speed;
+    div.insertAdjacentElement('beforeend', l);
+  
+    l = document.createElement("p");
+    l.textContent='風向:' + data.wind.deg;
+    div.insertAdjacentElement('beforeend', l);
+  
+    // l = document.createElement("p");
+    // l.textContent="都市名:" + data.name;
+    // div.insertAdjacentElement('beforeend', l);
+  }
+  function showError(err) {
+      console.log(err);
+    }
+
+  function finish() {
+      console.log('Ajax 通信が終わりました');
+  }

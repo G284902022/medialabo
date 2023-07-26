@@ -1,0 +1,18 @@
+div#abc {
+    text-align: center;
+    padding-left: 5px;
+    width: 500px;
+    border: solid;
+    font-size: 2.5em;
+}
+select {
+    font-family: Georgia, serif;
+    text-align: center;
+}
+div#result {
+    font-family: Georgia, serif;
+    text-align: center;
+}
+body {
+    background-image: url("https://api.mediacms.jp/uploads/pixta_42589448_M_b3df32c2e7.jpg");
+}

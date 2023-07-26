@@ -2,7 +2,8 @@ div#abc {
     text-align: center;
     padding-left: 5px;
     width: 500px;
-    border: solid;
+    /* border: solid; */
+    border-style: none;
     font-size: 2.5em;
 }
 select {
@@ -10,7 +11,7 @@ select {
     text-align: center;
 }
 div#result {
-    font-family: Georgia, serif;
+    font-family: system-ui;
     text-align: center;
 }
 body {
